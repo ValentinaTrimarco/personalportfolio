@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Titlte-->
+        <title>Valentina Trimarco | Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- JS form-->
+        <title>Contact Form</title>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script type="text/javascript">
+                (function() {
+                emailjs.init("1QAxyPMOXDIhIWSqU");
+                })();
+                </script>
+
+                <script type="text/javascript">
+                    window.onload = function() {
+                        document.getElementById('contact-form').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            // generate a five digit number for the contact_number variable
+                            this.contact_number.value = Math.random() * 100000 | 0;
+                            // these IDs from the previous steps
+                            emailjs.sendForm('service_up618x7', 'template_xr1q0c9', this)
+                                .then(function() {
+                                    console.log('SUCCESS!');
+                                }, function(error) {
+                                    console.log('FAILED...', error);
+                                });
+                        });
+                    }
+                 </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Ciao, Valentina</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Competenze</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Ciao, sono <br> Valentina Trimarco</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Digital marketing & growth specialist</p>
+                        <a class="btn btn-primary btn-xl" href="#contact">Conosciamoci!</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Di cosa mi occupo, in breve</h2>
+                        <p class="text-white mb-4"><i>#funnel #digitalstrategy #analisidati #marketingautomation #advertising</i></p>
+                        <hr class="divider divider-light" />
+                        <p class="text-white mb-4">“In un mondo sempre più orientato alla Digital Transformation bisogna guidare gli imprenditori e i manager verso questo nuovo cambio di paradigma.”</i><br><br>
+                    Mi presento: sono Valentina, <b>Growth & Digital Marketing Specialist</b> e mi occupo della creazione e dell’implementazione della strategia digitale dell’azienda.<br><br>
+                    Le mie competenze digitali e l’approccio sperimentale, uniti al mio background in <b>Business Management</b>, mi aiutano ad avere una visione complessiva del business e del prodotto e di studiare strategie orientate alla crescita.<br><br>
+                    Il marketing in cui credo aiuta a creare valore per le organizzazioni e per le persone: parte da una <b>User Experience</b> studiata che contribuisce a creare un’esperienza significativa e ad aumentare la soddisfazione in ogni fase del <b>Customer Journey</b>.</p><br>
+                        <a class="btn btn-light btn-xl" href="https://www.youtube.com/watch?v=wRGncC_gXZs"  target=”_blank”>Guarda la mia intervista con Federica Mutti!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Le mie aree di competenza</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Wordpress</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-tools fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Elementor</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-shuffle fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Active Campaign</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-envelope-fill fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Mailchimp</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-plug fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Zapier</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-facebook fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Business Manager</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-bar-chart-fill fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Google Analytics</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-cart-fill fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Shopify</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Funnel">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Funnel</div>
+                                <div class="project-name">Creazione ed ottimizzazione di funnel orientati ad obiettivi di business</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Content marketing">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Content marketing</div>
+                                <div class="project-name">Definizione della strategia di contenuti su canali social, DEM e SEO</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Analisi e reportistica">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Analisi e reportistica</div>
+                                <div class="project-name">Creazione di report e analisi dati attraverso Excel, Google Analytics, Google Tag Manager e Data Studio</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Email marketing e automazioni">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Email marketing e automazioni</div>
+                                <div class="project-name">Ideazione e creazione di campagne di email marketing e attivazione di processi marketing automation</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Social media advertising">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Social media advertising</div>
+                                <div class="project-name">Definizione della strategia, pianificazione e gestione del budget di ADV (Facebook e Instagram)</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Web design">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Web design</div>
+                                <div class="project-name">Creazione di siti web, landing page ed e-commerce attraverso le piattaforme Wordpress, Elementor e Shopify</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">Vuoi saperne di più sulle mie esperienze professionali?</h2>
+                <a class="btn btn-light btn-xl" href="assets/cv-valentina-trimarco.png"  target=”_blank”>Scarica il mio cv!</a>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Restiamo in contatto!</h2>
+                        <hr class="divider" />
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="text-center">
+                        <form id="contact-form">
+
+                            <input type="hidden" name="contact_number">
+                            <label> <font color="#1D809F">Nome</font></label><br>
+                            <input type="text" name="user_name"><br>
+
+                            <label><font color="#1D809F">Email</font></label><br>
+                            <input type="email" name="user_email"><br>
+
+                            <label><font color="#1D809F">Messaggio</font></label><br>
+                            <textarea name="message"></textarea><br>
+                            <input type="submit" value="Invia">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+
+               <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022, Valentina Trimarco</div></div>
+               <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Made with 💕 + 🧠</div></div>
+
+           </footer>
+           <!-- Bootstrap core JS-->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+           <!-- SimpleLightbox plugin JS-->
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+           <!-- Core theme JS-->
+           <script src="js/scripts.js"></script>
+           <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+           <!-- * *                               SB Forms JS                               * *-->
+           <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+           <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+           <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       </body>
+   </html>
